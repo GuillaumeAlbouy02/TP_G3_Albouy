@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int i = 1;
         while(i!=0) {
-            System.out.println("Tapez le numéro du TP à exécuter : 1, 2\n Tapez 3 pour quitter");
+            System.out.println("Tapez le numéro du TP à exécuter : 1, 2\n 3 : chats du TP3\n Tapez 4 pour quitter");
 
             int choix = scanner.nextInt();
             switch (choix) {
@@ -18,8 +18,13 @@ public class Main {
                     TP2.TP2(scanner);
                     break;
                 case 3:
-                    i=0;
+                    SafeScanner sc = new SafeScanner();
+                    SafeScanner.cat(sc);
                     break;
+                case 4:
+                    i = 0;
+                    break;
+
 
 
             }
